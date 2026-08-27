@@ -1,0 +1,14 @@
+{
+  "name": "sefi-engine",
+  "version": "1.0.0",
+  "description": "Single Entity Field Interpretation (SEFI) unified engine",
+  "main": "sefi-cli.js",
+  "scripts": {
+    "start": "node sefi-cli.js",
+    "state": "node sefi-cli.js state",
+    "visualize": "node sefi-cli.js visualize",
+    "warp": "node sefi-cli.js warp 10"
+  },
+  "author": "Jason Dutton",
+  "license": "MIT"
+}
