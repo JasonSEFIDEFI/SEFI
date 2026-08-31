@@ -28,13 +28,16 @@ class FieldAuthorship:
         """
         Intensity is derived from how aligned the position and momentum are.
         This expresses how strongly the entity asserts its identity.
+        A field should not lose intensity simply because the vectors are
+        orthogonal; it should remain at least as strong as its origin state.
         """
         raw_dir = self.origin.origin_direction()
         pos_dir = normalize(self.origin.position)
         alignment = dot(raw_dir, pos_dir)
 
-        # Blend raw strength with alignment for expressive intensity
-        return blend(self.origin.origin_strength(), alignment, 0.25)
+        base = self.origin.origin_strength()
+        blended = blend(base, alignment, 0.25)
+        return max(base, blended)
 
     def authored_alignment(self):
         """

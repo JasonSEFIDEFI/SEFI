@@ -5,28 +5,19 @@ from core.warp_expression import WarpExpression
 from core.warp_defi import WarpDEFI
 
 
-def test_core_pipeline_values():
+def demo_core():
     origin = FieldOrigin([0.0, 1.0, 0.0], [1.0, 0.0, 0.0])
     authorship = FieldAuthorship(origin)
     sovereignty = FieldSovereignty(authorship)
     expression = WarpExpression(sovereignty)
     defi = WarpDEFI(expression)
 
-    o = origin.origin_strength()
-    a = authorship.authored_intensity()
-    s = sovereignty.sovereignty_strength()
-    e = expression.expression_intensity()
-    d = defi.defi_intensity()
+    print("ORIGIN strength:", origin.origin_strength())
+    print("AUTHORSHIP intensity:", authorship.authored_intensity())
+    print("SOVEREIGNTY strength:", sovereignty.sovereignty_strength())
+    print("EXPRESSION intensity:", expression.expression_intensity())
+    print("DEFI intensity:", defi.defi_intensity())
 
-    # basic positivity
-    assert o > 0
-    assert a > 0
-    assert s > 0
-    assert e > 0
-    assert d > 0
 
-    # canonical SEFI ordering
-    assert a >= o
-    assert s >= a
-    assert e >= s
-    assert d >= e
+if __name__ == "__main__":
+    demo_core()

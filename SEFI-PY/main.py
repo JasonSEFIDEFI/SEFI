@@ -1,32 +1,43 @@
-from core.field_origin import FieldOrigin
-from core.field_authorship import FieldAuthorship
-from core.field_sovereignty import FieldSovereignty
-from core.warp_expression import WarpExpression
-from core.warp_defi import WarpDEFI
+# main.py
 
-def demo():
-    origin = FieldOrigin([0.0, 1.0, 0.0], [1.0, 0.0, 0.0])
-    authorship = FieldAuthorship(origin)
-    sovereignty = FieldSovereignty(authorship)
-    expression = WarpExpression(sovereignty)
-    defi = WarpDEFI(expression)
+import sys
 
-    print("ORIGIN strength:", origin.origin_strength())
-    print("AUTHORSHIP intensity:", authorship.authored_intensity())
-    print("SOVEREIGNTY strength:", sovereignty.sovereignty_strength())
-    print("EXPRESSION intensity:", expression.expression_intensity())
-    print("DEFI intensity:", defi.defi_intensity())
+from demo_core import demo_core
+from demo_sim import demo_sim
+from demo_warp import demo_warp
+from demo_quantum import demo_quantum
+
+
+MENU = """
+SEFI-PY MAIN MENU
+-----------------
+1. SEFI Core Pipeline Demo
+2. SEFI-SIM World Simulation
+3. Torsion Warp Simulation
+4. Quantum Warp Superposition Demo
+5. Exit
+"""
+
+
+def main():
+    while True:
+        print(MENU)
+        choice = input("Select an option: ").strip()
+
+        if choice == "1":
+            demo_core()
+        elif choice == "2":
+            demo_sim()
+        elif choice == "3":
+            demo_warp()
+        elif choice == "4":
+            demo_quantum()
+        elif choice == "5":
+            print("Exiting SEFI-PY.")
+            sys.exit(0)
+        else:
+            print("Invalid selection. Try again.\n")
+
 
 if __name__ == "__main__":
-    demo()
-
-from sim.sim_engine import run_sim
-
-if __name__ == "__main__":
-    demo()      # your existing demo
-    run_sim()   # SEFI-SIM starts here
-
-from sim.sim_engine import run_sim
-
-if __name__ == "__main__":
-    run_sim()
+    main()

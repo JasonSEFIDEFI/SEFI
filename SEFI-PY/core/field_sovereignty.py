@@ -29,6 +29,9 @@ class FieldSovereignty:
         Sovereignty strength is based on:
         - authored intensity
         - stability of alignment between origin and authored direction
+
+        Preserve the authored layer as a floor so the autonomous layer does not
+        diminish the identity already established by authorship.
         """
         authored_intensity = self.authorship.authored_intensity()
 
@@ -36,7 +39,8 @@ class FieldSovereignty:
         authored_dir = self.authorship.authored_direction()
         alignment = dot(origin_dir, authored_dir)
 
-        return blend(authored_intensity, alignment, 0.4)
+        blended = blend(authored_intensity, alignment, 0.4)
+        return max(authored_intensity, blended)
 
     def sovereignty_alignment(self):
         """

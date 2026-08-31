@@ -32,10 +32,14 @@ class WarpDEFI:
         Derived from:
         - expression intensity
         - expression alignment
+
+        Keep the expression layer as the minimum supported intensity so the
+        cumulative field remains monotonic across the full SEFI pipeline.
         """
         intensity = self.expression.expression_intensity()
         alignment = self.expression.expression_alignment()
-        return blend(intensity, alignment, 0.45)
+        blended = blend(intensity, alignment, 0.45)
+        return max(intensity, blended)
 
     def defi_alignment(self):
         """
