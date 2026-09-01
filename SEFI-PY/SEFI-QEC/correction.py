@@ -4,8 +4,12 @@ correction.py
 Correction = DEFI realignment.
 """
 
-from .logical_worldline import LogicalWorldline
-from .physical_qubits import PhysicalQubits
+try:
+    from .logical_worldline import LogicalWorldline
+    from .physical_qubits import PhysicalQubits
+except ImportError:  # pragma: no cover - standalone compatibility
+    from logical_worldline import LogicalWorldline
+    from physical_qubits import PhysicalQubits
 
 
 class Corrector:

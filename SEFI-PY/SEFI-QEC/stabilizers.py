@@ -4,7 +4,10 @@ stabilizers.py
 Real stabilizer parity checks for the 3-qubit repetition code.
 """
 
-from .physical_qubits import PhysicalQubits
+try:
+    from .physical_qubits import PhysicalQubits
+except ImportError:  # pragma: no cover - standalone-file compatibility
+    PhysicalQubits = object
 
 
 def z_parity(q1, q2):
@@ -24,5 +27,11 @@ class StabilizerSet:
         q = physical_qubits.get_state()
         return {
             "Z1Z2": z_parity(q[0], q[1]),
-            "Z2Z3": z_parity(q[1], q[2])
+            "Z2Z3": z_parity(q[1], q[2]),
+        }
+
+    def check_states(self, states):
+        return {
+            "Z1Z2": 0 if states[0] == states[1] else 1,
+            "Z2Z3": 0 if states[1] == states[2] else 1,
         }

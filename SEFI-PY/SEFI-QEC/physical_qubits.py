@@ -4,8 +4,12 @@ physical_qubits.py
 Physical qubits for the 3-qubit repetition code.
 """
 
-from .logical_worldline import LogicalWorldline
-from .pauli_ops import pauli_x, pauli_z, pauli_y
+try:
+    from .logical_worldline import LogicalWorldline
+    from .pauli_ops import pauli_x, pauli_z, pauli_y
+except ImportError:  # pragma: no cover - standalone compatibility
+    from logical_worldline import LogicalWorldline
+    from pauli_ops import pauli_x, pauli_z, pauli_y
 
 
 class PhysicalQubits:

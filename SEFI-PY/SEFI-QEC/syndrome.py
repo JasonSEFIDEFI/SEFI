@@ -4,8 +4,12 @@ syndrome.py
 Extracts error syndromes from stabilizer violations.
 """
 
-from .stabilizers import StabilizerSet
-from .physical_qubits import PhysicalQubits
+try:
+    from .stabilizers import StabilizerSet
+    from .physical_qubits import PhysicalQubits
+except ImportError:  # pragma: no cover - standalone compatibility
+    from stabilizers import StabilizerSet
+    from physical_qubits import PhysicalQubits
 
 
 class SyndromeExtractor:
