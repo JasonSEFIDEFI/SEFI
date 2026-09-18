@@ -1,0 +1,5 @@
+# Engine Configuration Parameters
+SIMULATION_DT = 0.05
+DEFAULT_KAPPA = 0.2
+DEFAULT_TAU = 0.1
+VOXEL_RESOLUTION = 16
