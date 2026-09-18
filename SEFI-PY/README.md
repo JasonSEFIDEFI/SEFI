@@ -52,3 +52,31 @@ SEFI-PY is the Python implementation of the Single Entity Field Interpretation (
 - Full test suite
 
 ## Run Simulation
+
+## Render a PowerPoint Video
+
+The presentation runner renders the canonical narrative sequence and assembles a single PowerPoint-ready 16:9 MP4 at 1920x1080 and 30 fps:
+
+```powershell
+.\render_presentation.ps1
+```
+
+The final video is written to `animations/presentation/SEFI-boardroom.mp4`. Use a fast half-resolution preview while iterating:
+
+```powershell
+.\render_presentation.ps1 -Preview
+```
+
+To render another scene, pass its source file and class name:
+
+```powershell
+.\render_presentation.ps1 core/animations/sefi_core.py SEFICore
+```
+
+To render one scene in isolation, pass its source file and class name:
+
+```powershell
+.\render_presentation.ps1 core/animations/sefi_core.py SEFICore
+```
+
+The assembled MP4 and individual clips are saved in `animations/presentation`. Insert `SEFI-boardroom.mp4` into PowerPoint as a video.

@@ -13,6 +13,7 @@ $concatFile = Join-Path $outputDirectory "boardroom.concat.txt"
 
 $scenes = @(
     @{ File = "core/animations/intro_card.py"; Scene = "SEFIUnifiedIntro" },
+    @{ File = "core/animations/sefi_ontology.py"; Scene = "SEFIOntologyJourney" },
     @{ File = "core/animations/gwfm_intro.py"; Scene = "GWFMIntro" },
     @{ File = "core/animations/sefi_core.py"; Scene = "SEFICore" },
     @{ File = "core/animations/sefi_sovereignty.py"; Scene = "SEFISovereigntyMorph" },

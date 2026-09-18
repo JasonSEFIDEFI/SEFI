@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+body {
+  margin: 0;
+  background: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+#controls {
+  width: 300px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-right: 2px solid #333;
+}
+
+#controls h2 {
+  margin-top: 0;
+}
+
+#controls label {
+  display: block;
+  margin-top: 20px;
+}
+
+#controls input[type=range] {
+  width: 100%;
+}
+
+#controls button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: #444;
+}
+
+#fieldCanvas {
+  flex: 1;
+  display: block;
+}

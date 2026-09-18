@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SEFI Field Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+
+    <!-- CONTROL PANEL -->
+   <div id="controls">
+  <h2>SEFI Control Panel</h2>
+
+  <label>Origin Stability (S₀)</label>
+  <input type="range" id="originStability" min="0" max="200" value="80">
+
+  <label>Authorship Strength</label>
+  <input type="range" id="authorshipStrength" min="0" max="200" value="50">
+
+  <label>Sovereignty Lock</label>
+  <input type="checkbox" id="sovereigntyLock" checked>
+
+  <label>Warp Intensity</label>
+  <input type="range" id="warpIntensity" min="0" max="200" value="40">
+
+  <label>Time Speed</label>
+  <input type="range" id="timeSpeed" min="0" max="200" value="60">
+
+  <label>Show Curvature</label>
+  <input type="checkbox" id="showCurvature" checked>
+
+  <label>Show Layers</label>
+  <input type="checkbox" id="showLayers" checked>
+
+  <button id="resetBtn">Reset Field</button>
+<h3>Presets</h3>
+
+<button id="presetOrigin">Origin Canon</button>
+<button id="presetAuthorship">Authorship Canon</button>
+<button id="presetSovereignty">Sovereignty Canon</button>
+<button id="presetWarp">Warp Canon</button>
+<button id="presetFull">Full SEFI Canon</button>
+
+
+    <!-- FIELD CANVAS -->
+    <canvas id="fieldCanvas"></canvas>
+
+  </div>
+
+  <script src="sefi.js"></script>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+<script src="sefi3d.js"></script>
+<h3>Layer Colors</h3>
+
+<label>Origin Color</label>
+<input type="color" id="originColor" value="#4444ff">
+
+<label>Authorship Color</label>
+<input type="color" id="authColor" value="#44ff44">
+
+<label>Warp Color</label>
+<input type="color" id="warpColor" value="#ff8844">
+
+<label>Main Field Color</label>
+<input type="color" id="mainColor" value="#00ffff">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+<script src="sefi3d.js"></script>
+<

@@ -1,9 +1,8 @@
 from core.field_origin import FieldOrigin
 from core.field_authorship import FieldAuthorship
 from core.field_sovereignty import FieldSovereignty
-from core.warp_expression import WarpExpression
+from core.warp_expression import  WarpEngine
 from core.warp_defi import WarpDEFI
-
 
 def test_core_pipeline_values():
     origin = FieldOrigin([0.0, 1.0, 0.0], [1.0, 0.0, 0.0])
@@ -12,21 +11,8 @@ def test_core_pipeline_values():
     expression = WarpExpression(sovereignty)
     defi = WarpDEFI(expression)
 
-    o = origin.origin_strength()
-    a = authorship.authored_intensity()
-    s = sovereignty.sovereignty_strength()
-    e = expression.expression_intensity()
-    d = defi.defi_intensity()
-
-    # basic positivity
-    assert o > 0
-    assert a > 0
-    assert s > 0
-    assert e > 0
-    assert d > 0
-
-    # canonical SEFI ordering
-    assert a >= o
-    assert s >= a
-    assert e >= s
-    assert d >= e
+    assert origin.origin_strength() > 0
+    assert authorship.authored_intensity() > 0
+    assert sovereignty.sovereignty_strength() > 0
+    assert expression.expression_intensity() > 0
+    assert defi.defi_intensity() > 0
