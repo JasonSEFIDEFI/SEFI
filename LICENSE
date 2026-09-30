@@ -1,21 +1,85 @@
-MIT License
+SEFI Core Research License v1.0
 
-Copyright (c) 2026 JasonSEFIDEFI
+Copyright (c) 2026 Jason Duran Dutton
+SEFI Research Program
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any individual,
+researcher, educator, student, academic institution, government
+laboratory, or non-profit organization to access, study, use,
+reproduce, modify, and distribute this work and associated materials
+for research, educational, scientific, and other non-commercial
+purposes.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Attribution
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Any use of this work, including derivative works, publications,
+presentations, software implementations, educational materials,
+translations, analyses, or research outputs, shall provide attribution
+to:
+
+Jason Duran Dutton
+SEFI Research Program
+
+Where applicable, users are encouraged to cite the relevant published
+SEFI, DEFI, GWFM, and related manuscripts.
+
+Research Rights
+
+This license permits:
+
+- Academic study and review;
+- Independent verification and replication;
+- Scholarly criticism and debate;
+- Development of derivative research;
+- Educational instruction and classroom use;
+- Non-commercial software implementations;
+- Non-commercial distribution.
+
+Commercial Restrictions
+
+Commercial use is prohibited without prior written permission from the
+copyright holder.
+
+Commercial use includes, but is not limited to:
+
+- Sale of the work or derivative works;
+- Commercial licensing;
+- Integration into commercial products or services;
+- SaaS or hosted commercial offerings;
+- Proprietary redistribution;
+- Commercial consulting products substantially derived from this work.
+
+Derivative Works
+
+Derivative works must:
+
+- Retain this license;
+- Preserve attribution to the original author;
+- Clearly identify modifications;
+- Not imply endorsement by the original author.
+
+Academic Freedom
+
+Nothing in this license shall restrict independent scientific inquiry,
+peer review, criticism, alternative interpretations, competing
+theories, publication of contrary results, or open academic discussion.
+
+No Endorsement
+
+Use of this work does not imply endorsement by Jason Duran Dutton or
+the SEFI Research Program.
+
+Disclaimer
+
+THIS WORK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY,
+SCIENTIFIC VALIDITY, OR NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS WORK.
+
+Reservation of Rights
+
+All rights not expressly granted under this license are reserved by
+Jason Duran Dutton.
